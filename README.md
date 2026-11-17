@@ -122,35 +122,38 @@ flutter run --dart-define-from-file=.env --android-skip-build-dependency-validat
 
 ## 📦 Building Android APKs
 
-### Option 1: Release APK *(Recommended for sharing)*
-Builds an optimized, production-ready APK:
+### 📱 Quick Release APK Build
+To build the optimized, production-ready Release APK:
 ```bash
+cd smiletrack
 flutter build apk --release --dart-define-from-file=.env --android-skip-build-dependency-validation
 ```
-📂 **Output:** `build/app/outputs/flutter-apk/app-release.apk`
+📂 **Output File:** `smiletrack/build/app/outputs/flutter-apk/app-release.apk`
 
 ---
 
-### Option 2: Split-Per-ABI APK *(Smaller download size)*
-Builds separate APKs for specific CPU architectures (e.g. `arm64-v8a` for modern devices), reducing size to ~15–20 MB:
+### Option 2: Split-Per-ABI APK *(Smaller download size, ~15–20 MB)*
+Builds separate APKs for specific CPU architectures (e.g. `arm64-v8a` for modern devices):
 ```bash
+cd smiletrack
 flutter build apk --split-per-abi --dart-define-from-file=.env --android-skip-build-dependency-validation
 ```
-📂 **Output:** `build/app/outputs/flutter-apk/app-arm64-v8a-release.apk`
+📂 **Output:** `smiletrack/build/app/outputs/flutter-apk/app-arm64-v8a-release.apk`
 
 ---
 
 ### Option 3: Debug APK *(Quick testing)*
 ```bash
+cd smiletrack
 flutter build apk --debug --dart-define-from-file=.env --android-skip-build-dependency-validation
 ```
-📂 **Output:** `build/app/outputs/flutter-apk/app-debug.apk`
+📂 **Output:** `smiletrack/build/app/outputs/flutter-apk/app-debug.apk`
 
 ---
 
 ### Installing the APK via ADB:
 ```bash
-adb install -r build/app/outputs/flutter-apk/app-release.apk
+adb install -r smiletrack/build/app/outputs/flutter-apk/app-release.apk
 ```
 
 ---
