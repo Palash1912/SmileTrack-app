@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "329922735518",
+    "project_id": "smiletrack-142f4",
+    "storage_bucket": "smiletrack-142f4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329922735518:android:4dd0d0ca2f291f3577fa8f",
+        "android_client_info": {
+          "package_name": "com.example.smiletrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdCOn_7gouRUxe2l_kNNXfWqfcEkMum_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
